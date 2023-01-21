@@ -9,7 +9,7 @@ def password_hashing(password):
 #Create users
 def create_db(username, hashed_password):
     #Classic sqllite operations.
-    conn = sqlite3.connect('users.db')
+    conn = sqlite3.connect('users.sql')
     cursor = conn.cursor()
 
     create_table = """CREATE TABLE IF NOT EXISTS users (username, password)"""
